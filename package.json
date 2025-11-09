@@ -1,0 +1,16 @@
+{
+  "name": "@fenralab/tsconfig-base",
+  "version": "0.1.0",
+  "private": false,
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "tsconfig.browser.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Base TypeScript configuration shared across @FenraLab packages",
+  "license": "MIT"
+}
