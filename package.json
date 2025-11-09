@@ -4,9 +4,7 @@
   "private": false,
   "main": "tsconfig.json",
   "files": [
-    "tsconfig.json",
-    "tsconfig.node.json",
-    "tsconfig.browser.json"
+    "tsconfig.json"
   ],
   "publishConfig": {
     "access": "public"
