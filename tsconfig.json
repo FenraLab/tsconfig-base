@@ -3,15 +3,16 @@
   "display": "Base Config",
   "compilerOptions": {
     "outDir": "./dist",
-    "module": "nodenext",
+    "module": "esnext",
     "target": "esnext",
-    "sourceMap": true,
-        
-    "skipLibCheck": true,
-    "rewriteRelativeImportExtensions": true,
-    "esModuleInterop": true,
-"isolatedModules": true,
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
 
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false,
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "old"],
