@@ -8,11 +8,21 @@
     "moduleResolution": "Bundler",
     "jsx": "preserve",
 
+    "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
 
     "experimentalDecorators": false,
     "emitDecoratorMetadata": false,
+
+    "paths": {
+      "@fenralab/core": ["../core/src"],
+      "@fenralab/lims": ["../lims/src"],
+      "@fenralab/router": ["../router/src"],
+      "@fenralab/url": ["../url/src"],
+      "@fenralab/webdav": ["../webdav/src"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "old"],
