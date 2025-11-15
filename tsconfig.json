@@ -1,30 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Base Config",
+  "extends": "./tsconfig.build.json",
+
   "compilerOptions": {
-    "outDir": "./dist",
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "Bundler",
-    "jsx": "preserve",
-
-    "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-    "experimentalDecorators": false,
-    "emitDecoratorMetadata": false,
-
+    "baseUrl": ".",
     "paths": {
-      "@fenralab/core": ["../core/src"],
-      "@fenralab/lims": ["../lims/src"],
-      "@fenralab/router": ["../router/src"],
-      "@fenralab/url": ["../url/src"],
-      "@fenralab/webdav": ["../webdav/src"]
-    }
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "old"],
-  "lib": ["ES2015"],
+      "@fenralab/*": ["packages/*/src"]
+    },
+    "noEmit": true
+  }
 }
